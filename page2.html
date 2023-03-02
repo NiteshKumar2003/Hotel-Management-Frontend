@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Bookings</title>
+    <link rel="stylesheet" href="page2c.css">
+</head>
+<body>
+	<h1>View Page</h1>
+	
+	<form method="get" action="">
+		<label for="room_number">Room Number:</label>
+		<input type="number" id="room_number" name="room_number" min="100" max="999">
+		
+		<label for="room_type">Room Type:</label>
+		<select id="room_type" name="room_type">
+			<option value="">All</option>
+			<option value="standard">Standard</option>
+			<option value="deluxe">Deluxe</option>
+			<option value="suite">Suite</option>
+		</select>
+		
+		<label for="start_time">Start Time:</label>
+		<input type="datetime-local" id="start_time" name="start_time">
+		
+		<label for="end_time">End Time:</label>
+		<input type="datetime-local" id="end_time" name="end_time">
+		
+		<input type="submit" value="Apply Filters">
+	</form>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Booking ID</th>
+				<th>User Email</th>
+				<th>Room Number</th>
+				<th>Room Type</th>
+				<th>Start Time</th>
+				<th>End Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Loop through all the bookings and display them in rows -->
+			<!-- Use PHP or a similar server-side language to get bookings from a database -->
+			<!-- Filter the bookings based on the input fields in the form -->
+			<!-- You can use SQL queries or a similar technique to filter the bookings -->
+			<tr>
+				<td>1</td>
+				<td>user1@example.com</td>
+				<td>101</td>
+				<td>Standard</td>
+				<td>2023-03-01 09:00:00</td>
+				<td>2023-03-01 11:00:00</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>user2@example.com</td>
+				<td>201</td>
+				<td>Deluxe</td>
+				<td>2023-03-01 14:00:00</td>
+				<td>2023-03-01 16:00:00</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>user3@example.com</td>
+				<td>301</td>
+				<td>Suite</td>
+				<td>2023-03-02 10:00:00</td>
+				<td>2023-03-02 12:00:00</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
