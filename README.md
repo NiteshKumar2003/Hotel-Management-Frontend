@@ -1,1 +1,1 @@
-# Scaler
+# Hotel Management Frontend
